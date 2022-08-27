@@ -23,10 +23,15 @@ body::after {
 nav {
   align-items: center;
   background-color: #333333;
-  color: #c0c0c0;
+
   display: flex;
   height: 80px;
   padding: 10px;
+}
+
+nav h1 {
+  color: #c0c0c0;
+  text-decoration: none;
 }
 
 main {
@@ -34,4 +39,21 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.candy-container {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: center;
+
+}
+
+.candy-container div {
+  margin: 0 30px;
 }

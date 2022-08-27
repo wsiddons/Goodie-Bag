@@ -1,16 +1,18 @@
 import React from "react";
+import { Routes, Route } from 'react-router-dom'
 import CandiesList from "./CandiesList";
+import Home from "./Home";
 
 const Root = () => {
   return (
-    <div>
-      <nav>Goodie Bag</nav>
-      <main>
-        <h1>Welcome to the Goodie Bag!</h1>
-        <p>What a nice home page for your goodies!</p>
-        <CandiesList />
-      </main>
-    </div>
+    <>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path={'/candies'} element={<CandiesList />} />
+      </Routes>
+    </>
+
+
   );
 };
 
